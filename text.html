@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="https://service-online.su/text/text-editor/ckeditor-full/contents.css">
+<style>body { font-family: Arial,Helvetica Neue,sans-serif; }</style>
+</head>
+<body class="cke_contents_ltr"><!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+</head>
+<body>
+    <h1>Добро пожаловать на мой сайт!</h1>
+    <p>Это мой первый сайт, созданный с нуля на HTML.</p>
+</body>
+</html>
+ </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-24 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold red-accent">INKREDIBLE</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#home" class="nav-link px-3 py-2 text-sm font-medium hover:text-white">HOME</a>
+                        <a href="#portfolio" class="nav-link px-3 py-2 text-sm font-medium hover:text-white">PORTFOLIO</a>
+                        <a href="#about" class="nav-link px-3 py-2 text-sm font-medium hover:text-white">ABOUT</a>
+                        <a href="#booking" class="nav-link px-3 py-2 text-sm font-medium hover:text-white">BOOKING</a>
+                        <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium hover:text-white">CONTACT</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-black w-full pb-4">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#home" class="block px-3 py-2 text-base font-medium hover:text-white">HOME</a>
+                <a href="#portfolio" class="block px-3 py-2 text-base font-medium hover:text-white">PORTFOLIO</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium hover:text-white">ABOUT</a>
+                <a href="#booking" class="block px-3 py-2 text-base font-medium hover:text-white">BOOKING</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium hover:text-white">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">BESPOKE <span class="red-accent">TATTOO</span> ART</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Where skin becomes canvas and ink tells your story.</p>
+            <a href="#booking" class="inline-block px-8 py-4 border-2 border-white text-white font-bold hover:bg-white hover:text-black transition duration-300">
+                BOOK A CONSULTATION
+            </a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">PORTFOLIO</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">A curated selection of my finest work. Each piece is a unique collaboration between artist and client.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tattoo 1 -->
+                <div class="gallery-item overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1613082293061-15c8d09ff8f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Japanese style tattoo" class="w-full h-96 object-cover">
+                    <div class="bg-gray-900 p-6">
+                        <h3 class="text-xl font-bold mb-2">Japanese Irezumi</h3>
+                        <p class="text-gray-400">Full sleeve in traditional Japanese style</p>
+                    </div>
+                </div>
+                
+                <!-- Tattoo 2 -->
+                <div class="gallery-item overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1628087236170-0dffc1d3f0d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Black and grey portrait" class="w-full h-96 object-cover">
+                    <div class="bg-gray-900 p-6">
+                        <h3 class="text-xl font-bold mb-2">Black & Grey Portrait</h3>
+                        <p class="text-gray-400">Hyper-realistic portrait work</p>
+                    </div>
+                </div>
+                
+                <!-- Tattoo 3 -->
+                <div class="gallery-item overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1605649487212-47bddf064f5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Geometric tattoo" class="w-full h-96 object-cover">
+                    <div class="bg-gray-900 p-6">
+                        <h3 class="text-xl font-bold mb-2">Sacred Geometry</h3>
+                        <p class="text-gray-400">Precision line work and dotwork</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-8 py-3 border-2 border-white text-white font-bold hover:bg-white hover:text-black transition duration-300">
+                    VIEW FULL PORTFOLIO
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27c2e8d03fe5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Tattoo artist" class="w-full h-auto rounded-lg shadow-2xl">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">ABOUT THE ARTIST</h2>
+                    <div class="w-24 h-1 bg-red-600 mb-8"></div>
+                    <p class="text-lg mb-6">With over 15 years of experience in the industry, I specialize in creating custom, one-of-a-kind tattoos that reflect each client's unique personality and story.</p>
+                    <p class="text-lg mb-6">My journey began in Tokyo where I apprenticed under master tattoo artists, learning traditional techniques that inform my contemporary practice today.</p>
+                    <p class="text-lg mb-8">I believe in a collaborative approach, working closely with clients to transform their ideas into wearable art that stands the test of time.</p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-award text-2xl red-accent mr-3"></i>
+                            <span>5x Award Winner</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-certificate text-2xl red-accent mr-3"></i>
+                            <span>Certified Specialist</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-2xl red-accent mr-3"></i>
+                            <span>100% Vegan Inks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-20 bg-black">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">BOOKING</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Ready to begin your tattoo journey? Fill out the form below to request a consultation.</p>
+            </div>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="phone" class="block text-sm font-medium mb-1">Phone Number</label>
+                    <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                </div>
+                
+                <div>
+                    <label for="idea" class="block text-sm font-medium mb-1">Tattoo Idea/Description</label>
+                    <textarea id="idea" rows="4" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none"></textarea>
+                </div>
+                
+                <div>
+                    <label for="placement" class="block text-sm font-medium mb-1">Placement on Body</label>
+                    <input type="text" id="placement" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                </div>
+                
+                <div>
+                    <label for="size" class="block text-sm font-medium mb-1">Approximate Size (inches)</label>
+                    <input type="text" id="size" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                </div>
+                
+                <div>
+                    <label for="budget" class="block text-sm font-medium mb-1">Budget Range</label>
+                    <select id="budget" class="w-full px-4 py-3 bg-gray-900 border border-gray-700 focus:border-red-500 focus:outline-none">
+                        <option value="">Select a range</option>
+                        <option value="500-1000">$500 - $1000</option>
+                        <option value="1000-2000">$1000 - $2000</option>
+                        <option value="2000-3000">$2000 - $3000</option>
+                        <option value="3000+">$3000+</option>
+                    </select>
+                </div>
+                
+                <div class="pt-4">
+                    <button type="submit" class="w-full py-4 px-6 bg-red-600 hover:bg-red-700 text-white font-bold transition duration-300">
+                        SUBMIT REQUEST
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">CONTACT</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Get in touch to discuss your next tattoo project or to visit the studio.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-black rounded-lg">
+                    <i class="fas fa-map-marker-alt text-4xl red-accent mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">STUDIO LOCATION</h3>
+                    <p>123 Ink Street<br>Los Angeles, CA 90001</p>
+                </div>
+                
+                <div class="text-center p-8 bg-black rounded-lg">
+                    <i class="fas fa-clock text-4xl red-accent mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">HOURS</h3>
+                    <p>Tuesday - Friday: 11am - 7pm<br>Saturday: 10am - 5pm<br>Sunday - Monday: Closed</p>
+                </div>
+                
+                <div class="text-center p-8 bg-black rounded-lg">
+                    <i class="fas fa-phone-alt text-4xl red-accent mb-4"></i>
+                    <h3 class="text-xl font-bold mb-3">CONTACT INFO</h3>
+                    <p>Phone: (555) 123-4567<br>Email: info@inkredible.com<br>Instagram: @inkredible</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 max-w-4xl mx-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.3257159781!2d-118.2436839243279!3d34.05223507315678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b3d2b9a0a5%3A0x9e8a546f859dc1e0!2s123%20Ink%20St%2C%20Los%20Angeles%2C%20CA%2090001!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg shadow-xl"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <span class="text-2xl font-bold red-accent">INKREDIBLE</span>
+                    <p class="mt-2 text-gray-400">High-end tattoo artistry since 2008</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+                <p>&copy; 2023 INKREDIBLE Tattoo Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const menu = document.getElementById('mobile-menu');
+                    menu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Change navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
